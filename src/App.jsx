@@ -5,8 +5,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Entrar from "./componentes/Entrar";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-function App() {
 
+function App() {
+  
+
+  
   return (
     <>
 
@@ -19,6 +22,7 @@ function App() {
         <Route path="/" element={<Home />} />
       </Routes>
         </Router>
+
           </>
   );  
 }
