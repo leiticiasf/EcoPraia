@@ -10,6 +10,9 @@ function Entrar() {
   const handleClick = () => {
         irPara("/");
   };
+  const handleProfile = () => {
+    irPara("/perfil");
+};
   const [value, setValue] = useState('')
   const handleGoogle = () =>{
     signInWithPopup(auth, provider).then((data) =>{
@@ -45,7 +48,8 @@ function Entrar() {
                     <br/><br/>
             <button onClick={handleGoogle}>Entre com o Google!</button>
   
-            <Button type="button" variant="primary" onClick={handleClick}> Voltar </Button>
+            <Button type="button" variant="primary" onClick={handleClick}> Voltar </Button><br/><br/><br/><br/>
+            <Button type="button" variant="primary" onClick={handleProfile}> Perfil </Button>
   
             </>
   );

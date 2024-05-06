@@ -3,6 +3,7 @@ import React from 'react';
 import Home from './componentes/home';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Entrar from "./componentes/Entrar";
+import Perfil from "./componentes/perfil";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
@@ -20,6 +21,8 @@ function App() {
         <Route path="/entrar" element={<Entrar />} />
         {}
         <Route path="/" element={<Home />} />
+        {}
+        <Route path="/perfil" element={<Perfil />} />
       </Routes>
         </Router>
 
