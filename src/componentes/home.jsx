@@ -8,6 +8,7 @@ import projeto from "../assets/images.jpg";
 
 
 
+
 function Home () {
   const navigate = useNavigate();
     const handleClick = () => {
