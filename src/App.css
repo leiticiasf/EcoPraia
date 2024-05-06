@@ -66,12 +66,9 @@ nav.navbar .me-auto .nav-link {
 }
 
 
-.containerEntrar {
-  display: flex;
-  justify-content: center;
-  margin: 90px;
+.container{
+  text-align: center;
 }
-
 
 
 .login{
