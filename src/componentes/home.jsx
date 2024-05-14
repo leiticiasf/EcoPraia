@@ -5,6 +5,7 @@ import "../App.css";
 import { useNavigate } from "react-router-dom";
 import banner from "../assets/dancarcomvoce.jpg";
 import projeto from "../assets/images.jpg";
+import gray from "./gray.png"
 
 
 
@@ -107,7 +108,21 @@ function Home () {
         </section>
         <br/><br/><br/><br/>
 
-
+       
+        <div className="rou">
+  <div className="coluna">
+    <div className="cards">
+      <img id="grei" src={gray} alt="Jane" />
+      <div className="cont">
+        <h2>Jane Doe</h2>
+        <p className="titulo">CEO &amp; Founder</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button className="contatos">Contact</button></p>
+      </div>
+    </div>
+    </div>
+    </div>
 
     </>
 

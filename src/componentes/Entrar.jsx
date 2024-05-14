@@ -3,31 +3,39 @@ import { Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import { auth, provider } from "../firebase/config";
 import { signInWithPopup } from "firebase/auth";
+import axios from 'axios';
+import Formulario  from '../Formulario/Formulario';
 import "../App.css";
 
 function Entrar() {
- 
+  let username = '';
+  let password = '';
 
-     const [username, setUsername] = useState('');
-    const [password, setPassword] = useState('');
-    const handleLogin = async () => {
-        if(username == "" && password == "") {
-            alert("Campos vazios!")
+  function handleCadastro() {
+    axios.post('http://localhost:8090/api/cadastro', { username, password })
+      .then(() => {
+        irPara('/');
+      });
+  }
+
+
+
+  function handleLogin() {
+    // Lógica de autenticação aqui, usando Axios
+    axios.post('http://localhost:8090/api/login', { username, password })
+      .then(response => {
+        if (response.data === true) {
+          irPara('/');
+        } else {
+          alert('Falha ao se logar');
         }
-        
-        try {
-            const response = await logar(username, password);
-            
-            if(response == true){
-                 alert("Logado com sucesso!")
-            }
-            else if(response == false){
-                alert("Usuário não encontrado.")
-            }
-        } catch (error) {
-            console.error('Erro ao se logar:', error);
-        }
-    };
+      });
+  }
+
+  const inputs = [
+    { type: 'text', placeholder: 'Username', onChange: (e) => username = e.target.value },
+    { type: 'password', placeholder: 'Password', onChange: (e) => password = e.target.value }
+  ];
 
     
   const irPara = useNavigate();
@@ -38,56 +46,33 @@ function Entrar() {
   const [value, setValue] = useState('')
   const handleGoogle = () => {
     signInWithPopup(auth, provider).then((data) => {
-      setValue(data.user.email)
+      setValue(data.user.email) 
       localStorage.setItem("email", data.user.email)
     })
   }
-
-   
   useEffect(() => {
     setValue(localStorage.getItem('email'))
   })
+
 
   return (
     <>    <div className='container'>
           <h1>Conecte-se</h1><br />
 
           <h3>Crie uma conta</h3>
-          <input 
-          type='text'
-          name='nome'
-          placeholder='nome'
-          /> <br/>
-          <input
-          type="text"
-          name='username'
-          placeholder="Email"
-        /> <br/>
-
-          <input
-          type="password" 
-          name="password"
-          placeholder="password"
-        />  
+        
         <br/> <br/>
-          <Button type="button" variant="primary"> Criar conta </Button><br /><br />
-          <br/> <br/>
-
+        <Formulario inputs={inputs} onSubmit={handleCadastro}><br/><br/>
+      <button type="submit">Cadastrar</button>  
+      </Formulario>
+              <br/> <br/>
 
           <h3>Login</h3>
-          <input 
-          type="text" 
-          placeholder="  Email"
-         /><br />
+         
+          <Formulario inputs={inputs} onSubmit={handleLogin}><br/><br/>
+      <button type="submit">Logar</button> 
+      </Formulario>
 
-          <input 
-          type="password" 
-          placeholder="Senha"         
-           />
-           <br /><br />
-           
-          <Button  type="button" variant="primary" onClick={handleClick} > Logar</Button>
-      <br /><br /><br/><br/>
       <button onClick={handleGoogle}>Entre com o Google!</button><br/>
       <Button type="button" variant="primary" onClick={handleClick}> Voltar </Button>
 
