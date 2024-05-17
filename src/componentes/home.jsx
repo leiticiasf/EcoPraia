@@ -107,7 +107,47 @@ function Home () {
         </section>
         <br/><br/><br/><br/>
 
+        <div className="equipe"> <h1>Nossa Equipe</h1>
+                <div className="textoDireita"> 
+                <h1>Letícia Ferreira</h1>
+                <h2>Função</h2>
+                <p>Lorem ipsum dolor sit amet consec magnam adipisci officia at. Amet, explicabo voluptate! Repellat omnis praesentium eaque ipsam?</p> 
+                <img className="fotoEsquerda"src={gray}/>
 
+                </div>
+                
+                <div className="textoEsquerda"> 
+                <h1>Lívia Derks</h1>
+                <h2>Função</h2>
+                <p>Lorem ipsum dolor sit amet consec magnam adipisci officia at. Amet, explicabo voluptate! Repellat omnis praesentium eaque ipsam?</p> &nbsp;
+                <img className="fotoDireita"src={gray}/>
+
+                </div>
+
+                <div className="textoDireita"> 
+                <h1>Francisco Gasperini </h1>
+                <h2>Função</h2>
+                <p>Lorem ipsum dolor sit amet consec magnam adipisci officia at. Amet, explicabo voluptate! Repellat omnis praesentium eaque ipsam?</p> &nbsp;
+                <img className="fotoEsquerda"src={gray}/>
+
+                </div>
+
+                <div className="textoEsquerda"> 
+                <h1>Lara Drews</h1>
+                <h2>Função</h2>
+                <p>Lorem ipsum dolor sit amet consec magnam adipisci officia at. Amet, explicabo voluptate! Repellat omnis praesentium eaque ipsam?</p> &nbsp;
+                <img className="fotoDireita"src={gray}/>
+
+                </div>
+
+                <div className="textoDireita"> 
+                <h1>Sofia Nimet</h1>
+                <h2>Função</h2>
+                <p>Lorem ipsum dolor sit amet consec magnam adipisci officia at. Amet, explicabo voluptate! Repellat omnis praesentium eaque ipsam?</p> &nbsp;
+                <img className="fotoEsquerda" src={gray}/>
+                </div>
+       
+                </div>
 
     </>
 
