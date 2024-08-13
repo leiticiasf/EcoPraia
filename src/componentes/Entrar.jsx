@@ -3,39 +3,44 @@ import { Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import { auth, provider } from "../firebase/config";
 import { signInWithPopup } from "firebase/auth";
+import './login.css'
 
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import './login.css';
 
 function Entrar() {
-   
+    const navigate = useNavigate();
+    const handleClick = () => {
+        navigate('/');
+    };
+
   
     const [isSignUp, setIsSignUp] = useState(false);
 
     const handleToggle = () => {
         setIsSignUp(!isSignUp);
-        const container = document.getElementById('container');
-        container.classList.toggle("active");
+        const containerEntrar = document.getElementById('containerEntrar');
+        containerEntrar.classList.toggle("active");
     };
 
     const handleRegisterClick = () => {
         setIsSignUp(true);
-        const container = document.getElementById('container');
-        container.classList.add("active");
+        const containerEntrar = document.getElementById('containerEntrar');
+        containerEntrar.classList.add("active");
     };
 
     const handleLoginClick = () => {
         setIsSignUp(false);
-        const container = document.getElementById('container');
-        container.classList.remove("active");
+        const containerEntrar = document.getElementById('containerEntrar');
+        containerEntrar.classList.remove("active");
     };
 
     return (
-        <div className="container" id="container">
-            <div className={`form-container ${isSignUp ? 'sign-up' : 'sign-in'}`}>
+        <div className='bodyEntrar'>
+        <div className="containerEntrar" id="containerEntrar">
+            <div className={`form-containerEntrar ${isSignUp ? 'sign-up' : 'sign-in'}`}>
                 {/* Conteúdo do formulário */}
                 {isSignUp ? (
                     <form>
@@ -66,7 +71,7 @@ function Entrar() {
                     </form>
                 )}
             </div>
-            <div className="toggle-container">
+            <div className="toggle-containerEntrar">
                 <div className="toggle">
                     <div className="toggle-panel toggle-left">
                         <h1>Bem-vindo!</h1>
@@ -80,6 +85,9 @@ function Entrar() {
                     </div>
                 </div>
             </div>
+        </div>
+        <button id='voltar' onClick={handleClick}>Voltar</button>
+
         </div>
     );
 }

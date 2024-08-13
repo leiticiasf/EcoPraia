@@ -1,11 +1,9 @@
 import React, {useState} from "react";
 import { Container, Navbar, Nav, Button, Carousel, Row, Col, } from "react-bootstrap";
-import logo from "../assets/emojo.jpeg";
 import "../App.css";
 import { useNavigate } from "react-router-dom";
 import banner from "../assets/dancarcomvoce.jpg";
 import projeto from "../assets/images.jpg";
-
 
 
 
@@ -65,7 +63,7 @@ function Home () {
 <br/><br/><br/><br/>
 
      <section className="banner" id="home">
-            <Container id="inicio">
+            <Container id="container">
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
                        <h1>Sobre o Mapa </h1>
