@@ -63,7 +63,7 @@ function Home () {
 <br/><br/><br/><br/>
 
      <section className="banner" id="home">
-            <Container id="container">
+            <Container id="containerEntrar">
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
                        <h1>Sobre o Mapa </h1>
@@ -103,8 +103,9 @@ function Home () {
                         </Col>
                 </Row>
             </Container>
+            <br/><br/><br/><br/>
         </section>
-        <br/><br/><br/><br/>
+    
 
 
 

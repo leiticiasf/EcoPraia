@@ -72,7 +72,9 @@ nav.navbar .me-auto .nav-link {
   margin: 90px;
 }
 
-
+.exp{
+  border-radius: 50%;
+}
 
 .login{
   margin: auto;

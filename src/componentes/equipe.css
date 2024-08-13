@@ -1,0 +1,90 @@
+h1{
+    text-align: center;
+}
+
+#exp{    
+    border-radius: 60%;
+    width: 21%;
+    object-fit: none;
+    object-position: center;
+    margin-left: 11%;
+    float: left;
+}
+
+.textoLeticia{
+    margin-left:50%;
+}  
+
+.textoLeticia h3{
+    margin-left:21%;
+}
+
+
+.textoLeticia h1{
+    margin-left:18%;
+}
+
+.textoLeticia p{
+    margin-right: 13%;
+}
+
+#exp2{    
+    border-radius: 60%;
+    width: 21%;
+    object-fit: none;
+    object-position: center;
+    margin-right: 11%;
+    float: right;
+}
+
+.textoSofia{
+    margin-right:60%;
+
+}  
+
+.textoSofia h3{
+    margin-right:21%;
+}
+
+.textoSofia p{
+    margin-right:31%;
+}
+
+.textoSofia h1{
+    margin-right: 50%;
+}
+
+.sofia{
+    margin-left: 20%;
+}
+
+#exp{    
+    border-radius: 60%;
+    width: 21%;
+    object-fit: none;
+    object-position: center;
+    margin-left: 11%;
+    float: left;
+}
+
+.textoLivia{
+    margin-left:50%;
+}  
+
+.textoLivia h3{
+    margin-left: 37%;
+}
+
+
+.textoLivia h1{
+    margin-left:18%;
+}
+
+.textoLivia p{
+    margin-right: 13%;
+}
+
+
+.livia{
+    margin-left: 10%;
+}
