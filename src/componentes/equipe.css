@@ -85,6 +85,41 @@ h1{
 }
 
 
-.livia{
-    margin-left: 10%;
+.textoLara{
+    margin-right:60%;
+
+}  
+
+.textoLara h3{
+    margin-right:21%;
+}
+
+.textoLara p{
+    margin-right:31%;
+}
+
+.textoLara h1{
+    margin-right: 50%;
+}
+
+.lara{
+    margin-left: 20%;
+}
+
+#exp3{    
+    border-radius: 50%;
+    width: 21%;
+    object-fit: none;
+    object-position: center;
+    margin-right: 11%;
+    float: right;
+}   
+
+#exp5{    
+    border-radius: 60%;
+    width: 21%;
+    object-fit: none;
+    object-position: center;
+    margin-left: 11%;
+    float: left;
 }

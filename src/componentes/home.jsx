@@ -4,6 +4,7 @@ import "../App.css";
 import { useNavigate } from "react-router-dom";
 import banner from "../assets/dancarcomvoce.jpg";
 import projeto from "../assets/images.jpg";
+import Equipe from "./Equipe";
 
 
 
@@ -106,6 +107,7 @@ function Home () {
             <br/><br/><br/><br/>
         </section>
     
+    <Equipe/>
 
 
 

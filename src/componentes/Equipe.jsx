@@ -46,7 +46,7 @@ function Equipe() {
                  <br/><br/><br/><br/><br/><br/><br/>
 
                 <Container className="lara">
-                <img id="exp2" src={exemplo4}/>
+                <img id="exp3" src={exemplo5}/>
                 <div className="textoLara">
                 <h1>Lara Drews</h1> 
                 <h3>Design e Frontend</h3>   
@@ -57,7 +57,7 @@ function Equipe() {
                  <br/><br/><br/><br/><br/><br/><br/>
 
                 <Container className="francisco">
-                <img id="exp2" src={exemplo5}/>
+                <img id="exp5" src={exemplo4}/>
                 <div className="textoFrancisco">
                 <h1>Francisco Gasperini</h1> 
                 <h3>Design e Frontend</h3>   
